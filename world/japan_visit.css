@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    text-align: center;
+    background-color:rgb(174, 104, 174,0.5) ;
+}
+header {
+    height: auto;
+    width: 100vw;
+    overflow: hidden;
+}
+
+header .nav_bar {
+    width: 100vw;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
+header .nav_bar .logo {
+    height: 100%;
+    width: 5%;
+    position: relative;
+    right: 25%
+}
+
+header .nav_bar .logo img {
+    height: 100%;
+    width: 100%;
+}
+
+header .nav_bar .world {
+    position: relative;
+    left: 8%;
+    /* color: black; */
+    font-size: 38px;
+    top: 8%;
+}
+
+header .nav_bar .world a {
+    text-decoration: none;
+    color: white;
+}
+
+header .nav_bar .world a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+header .nav_bar .nav_list {
+    width: auto;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 25%;
+    top: 11%;
+}
+
+header .nav_bar .nav_list li {
+    padding: 0px 20px;
+    list-style: none;
+    font-size: 20px;
+}
+
+header .nav_bar .nav_list li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in;
+}
+
+header .nav_bar .nav_list li a:hover {
+    color: orange;
+    text-decoration: underline white;
+}
+
+header .nav_bar .nav_list li a:last-child {
+    right: 0px;
+}
+.landing_page_box_in_japan_best_places{
+    /* background-color: rgb(174, 104, 174,0.5); */
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.landing_page_box_in_japan_best_places h1{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10%;
+    font-size: 80px;
+    text-decoration: underline black;
+    color: black;
+}
+.content{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    background-color: rgb(61, 57, 57,0.5);
+    left: 10%;
+    top: 25%;
+    text-align: center;
+}
+.content .visit_list h3{
+    font-size: 30px;
+    position: absolute;
+    color: white;
+    top: 3%;
+    left: 10%;
+}
+.content .visit_list ul{
+    position: absolute;
+    list-style:decimal;
+    color: white; 
+    left: 15%;
+    top: 20%;
+}
+.content .visit_list ul li{
+    position: relative;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.visiting_place_hakonae{
+    text-align: center;
+}
+.visiting_place_hakonae h2{
+    font-size:80px;
+    color: black;
+    text-decoration: underline white;
+}
+.visiting_place_hakonae img{
+    width: 80%;
+    margin: 0px auto;
+}
+.visiting_place_hakonae p{
+    margin-top:80px;
+    width: 80%;
+    margin: 20px auto 0px;
+    color: white;
+    font-size: 30px;
+}
+.visiting_place_nagoya{
+    text-align: center;
+}
+.visiting_place_nagoya img{
+    width: 80%;
+    height: 600px;
+    margin: 0px auto;
+}
+.visiting_place_nagoya h2{
+    font-size: 80px;
+    color: black;
+    text-decoration: underline white;
+}
+.visiting_place_nagoya p{
+    margin-top:80px;
+    width: 80%;
+    margin: 20px auto 0px;
+    color: white;
+    font-size: 30px;
+}
+.visiting_place_nara{
+    text-align: center;
+}
+.visiting_place_nara{
+    width: 80%;
+    margin: 0px auto;
+}
+.visiting_place_nara img{
+    width: 80%;
+    height: 600px;
+    margin: 0px auto;
+}
+.visiting_place_nara h2{
+    font-size: 80px;
+    color:black;
+    text-decoration: underline white;
+}
+.visiting_place_nara p{
+    margin-top:80px;
+    width: 80%;
+    margin: 20px auto 0px;
+    color: white;
+    font-size: 30px; 
+}
+.visiting_place_osaka{
+    text-align: center;
+}
+.visiting_place_osaka img{
+    width: 80%;
+    height: 600px;
+    margin: 0px auto;
+}
+.visiting_place_osaka h2{
+    font-size: 80px;
+    color:black;
+    text-decoration: underline white    
+}
+.visiting_place_osaka p{
+    margin-top:80px;
+    width: 80%;
+    margin: 20px auto 0px;
+    color: white;
+    font-size: 30px;   
+}
+.visiting_place_sapporo{
+    text-align: center;
+}
+.visiting_place_sapporo img{
+    width: 80%;
+    height: 600px;
+    margin: 0px auto;
+}
+.visiting_place_sapporo h2{
+    font-size: 80px;
+    color:black;
+    text-decoration: underline white;  
+}
+.visiting_place_sapporo p{
+    margin-top:80px;
+    width: 80%;
+    margin: 20px auto 0px;
+    color: white;
+    font-size: 30px;
+}
+.visiting_place_tokyo{
+    text-align: center;
+}
+.visiting_place_tokyo img{
+    width: 80%;
+    height: 600px;
+    margin: 0px auto;
+}
+.visiting_place_tokyo h2{
+    font-size: 80px;
+    color:black;
+    text-decoration: underline white;  
+}
+.visiting_place_tokyo p{
+    margin-top:80px;
+    width: 80%;
+    margin: 20px auto 0px;
+    color: white;
+    font-size: 30px;
+}
+.visiting_place_yokohana{
+    text-align: center;
+}
+.visiting_place_yokohana img{
+    width: 80%;
+    height: 600px;
+    margin: 0px auto;
+}
+.visiting_place_yokohana h2{
+    font-size: 80px;
+    color:black;
+    text-decoration: underline white;  
+}
+.visiting_place_yokohana p{
+    margin-top:80px;
+    width: 80%;
+    margin: 20px auto 0px;
+    color: white;
+    font-size: 30px;
+}
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    position: relative;
+    top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+footer .footer_social_img {
+    width: 30px;
+    /* margin: 0px 0px 20px; */
+    position: relative;
+    left: 20px;
+}
+
+.world_footer {
+    display: inline-flex;
+    width: auto;
+    margin: 0px auto;
+    position: absolute;
+    top: 0%;
+    right: 45%;
+    transform: translate(-50%);
+}
+
+.world_footer img {
+    width: 100px;
+}
+
+pre {
+    transform: translate(-50%, -30%);
+    position: absolute;
+    top: 95%;
+    left: 47px;
+    color: white;
+}
+
+.footer_about {
+    display: flex;
+    width: auto;
+    height: 150px;
+    position: absolute;
+    right: 350px;
+    line-height: 40px;
+    flex-direction: column;
+}
+
+.footer_about h5 {
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: underline red;
+    cursor: pointer;
+}
+
+.footer_about p {
+    color: white;
+    cursor: pointer;
+    font-weight: 100;
+    margin: 0px 0px 0px 10px;
+}

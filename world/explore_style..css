@@ -1,0 +1,356 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* overflow-x: hidden; */
+}
+
+body {
+    width: 100vw;
+    height: 1800px;
+    overflow-x: hidden;
+}
+
+header {
+    height: auto;
+    width: 100vw;
+    overflow: hidden;
+}
+
+header .nav_bar {
+    width: 100vw;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+
+header .nav_bar .logo {
+    height: 100%;
+    width: 5%;
+    position: relative;
+    right: 25%
+}
+
+header .nav_bar .logo img {
+    height: 100%;
+    width: 100%;
+}
+
+header .nav_bar .world {
+    position: relative;
+    left: 8%;
+    /* color: black; */
+    font-size: 38px;
+    top: 8%;
+}
+
+header .nav_bar .world a {
+    text-decoration: none;
+    color: white;
+}
+
+header .nav_bar .world a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+header .nav_bar .nav_list {
+    width: auto;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 25%;
+    top: 11%;
+}
+
+header .nav_bar .nav_list li {
+    padding: 0px 20px;
+    list-style: none;
+    font-size: 20px;
+}
+
+header .nav_bar .nav_list li a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in;
+}
+
+header .nav_bar .nav_list li a:hover {
+    color: orange;
+    text-decoration: underline white;
+}
+
+header .nav_bar .nav_list li a:last-child {
+    right: 0px;
+}
+
+.slider_background {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* background: linear-gradient(45deg, #EE7752, #E73C7E, #2EA6D5, #23D5AB, rgb(240, 190, 233));
+    background-size: 400% 400%; */
+    /* background-position: 50% 100%; */
+    /* animation: slider_background_animation 10s ease-in-out infinite alternate-reverse; */
+}
+
+/* 
+@keyframes slider_background_animation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    20% {
+        background-position: 50% 100%;
+    }
+
+    40% {
+        background-position: 50% 0%;
+    }
+} */
+
+input[name="a"] {
+    display: none;
+    position: absolute;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    object-fit: cover;
+}
+
+.middle {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+}
+
+.slide {
+    width: 500%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    transition: 1s;
+}
+
+.slides {
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    object-fit: cover;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+}
+
+.city_name {
+    color: white;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 20%;
+    line-height: 30px;
+    transform: translate(-50%, -80%);
+}
+
+.city_name h5 {
+    font-size: 70px;
+    font-weight: 300;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.text_slider {
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+
+.navigation {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translate(-95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar {
+    width: 10px;
+    height: 40px;
+    border: 3px solid white;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.link {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, 65%);
+}
+
+.link a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 35px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.bar:hover {
+    cursor: pointer;
+    background-color: pink;
+}
+
+#r1:checked~.s1 {
+    margin-left: 0%;
+}
+
+#r2:checked~.s1 {
+    margin-left: -100%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -200%;
+}
+
+#r4:checked~.s1 {
+    margin-left: -300%;
+}
+
+#r5:checked~.s1 {
+    margin-left: -400%;
+}
+
+.about_us {
+    margin-top: 40px;
+    background-image: url(about_img/about.avif);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+}
+
+.about_box {
+    position: relative;
+    height: 100vh;
+    width: 30vw;
+    background-color: black;
+    text-align: center;
+}
+
+.about_box p {
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    text-decoration: underline pink;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    width: 70vw;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    position: relative;
+    top: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+footer .footer_social_img {
+    width: 30px;
+    /* margin: 0px 0px 20px; */
+    position: relative;
+    left: 20px;
+}
+
+.world_footer {
+    display: inline-flex;
+    width: auto;
+    margin: 0px auto;
+    position: absolute;
+    top: 0%;
+    right: 45%;
+    transform: translate(-50%);
+}
+
+.world_footer img {
+    width: 100px;
+}
+
+pre {
+    transform: translate(-50%, -30%);
+    position: absolute;
+    top: 95%;
+    left: 47px;
+    color: white;
+}
+
+.footer_about {
+    display: flex;
+    width: auto;
+    height: 150px;
+    position: absolute;
+    right: 350px;
+    line-height: 40px;
+    flex-direction: column;
+}
+
+.footer_about h5 {
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: underline red;
+    cursor: pointer;
+}
+
+.footer_about p {
+    color: white;
+    cursor: pointer;
+    font-weight: 100;
+    margin: 0px 0px 0px 10px;
+}
